@@ -29,13 +29,11 @@ a {
 }
 
 .top__content {
-   /* padding-top: 32px;
-   padding-left: 24px; */
    margin-bottom: 197px;
 }
 
 .top__info {
-   margin-bottom: 11px;
+   margin-bottom: 50px;
 }
 
 .top__subtitle {
@@ -58,7 +56,6 @@ a {
 }
 
 .top__text {
-   margin-bottom: 50px;
    font-style: normal;
    font-weight: 600;
    font-size: 18px;
