@@ -11,23 +11,34 @@
 
 @font-face {
    font-family: 'Gilroy-Medium';
-   src: url('Gilroy-Medium.eot');
+   src: url('../fonts/Gilroy-Medium.eot');
    src: local('Gilroy Medium'), local('Gilroy-Medium'),
-      url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-      url('Gilroy-Medium.woff') format('woff'),
-      url('Gilroy-Medium.ttf') format('truetype');
+      url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy-Medium.woff') format('woff'),
+      url('../fonts/Gilroy-Medium.ttf') format('truetype');
    font-weight: 500;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'Gilroy-SemiBold';
-   src: url('Gilroy-SemiBold.eot');
+   src: url('../fonts/Gilroy-SemiBold.eot');
    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-      url('Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('Gilroy-SemiBold.woff') format('woff'),
-      url('Gilroy-SemiBold.ttf') format('truetype');
+      url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+      url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
    font-weight: 600;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gilroy-Regular';
+   src: url('../fonts/Gilroy-Regular.eot');
+   src: local('Gilroy Regular'), local('Gilroy-Regular'),
+      url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Gilroy-Regular.woff') format('woff'),
+      url('../fonts/Gilroy-Regular.ttf') format('truetype');
+   font-weight: normal;
    font-style: normal;
 }
 
@@ -42,9 +53,6 @@ a {
    text-decoration: none;
 }
 
-body {
-   padding: 0 auto;
-}
 
 /* TOP */
 
@@ -150,11 +158,6 @@ body {
 
 /* choose */
 .choose {
-   /* padding-top: 40px;
-   max-width: 1190px;
-   padding-left: 10px;
-   padding-right: 10px;
-   margin: 0 auto; */
    max-width: 1920px;
    margin: 0 auto;
 
@@ -195,10 +198,12 @@ body {
 }
 
 .leader__item_text {
-   margin-bottom: 25px;
    font-family: 'Gilroy-Regular';
+   font-weight: normal;
+   font-style: normal;
    font-size: 15px;
    line-height: 150%;
+   margin-bottom: 25px;
    color: #666666;
 }
 
