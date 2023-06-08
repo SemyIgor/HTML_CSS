@@ -278,6 +278,9 @@ body {
    background: #F25822;
    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
    color: #FFFFFF;
+   font-size: 13px;
+   line-height: 150%;
+   padding: 15px 35px 15px 35px;
    /* margin-right: calc(72px - 35px); */
 }
 
