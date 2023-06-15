@@ -1,5 +1,7 @@
 # Домашнее задание по уроку 12 HTML & CSS
 
+`Успел доделать счётчик корзины и тень с кнопкой на карточки`
+
 **Урок 12. Основы создания адаптивного сайта (вебинар)**
 
 Макет https://www.figma.com/file/mnLY69cYE5cqWM5w6n5hXx/Seo-%26-Digital-Marketing-Landing-Page?node-id=188%3A673
