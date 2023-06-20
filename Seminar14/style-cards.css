@@ -1,0 +1,88 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+h2 {
+   text-align: center;
+}
+
+.board {
+   width: 100%;
+   height: 400px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   gap: 30px;
+}
+
+.board__item {
+   width: 150px;
+   height: 250px;
+   border: 3px solid blue;
+   /* border: 20px solid blue; */
+   /* border: 1px solid blue; */
+   transition: transform 1s;
+}
+
+.board__item-1:hover {
+   transform: translate(186px, -30px) scale(1.2);
+}
+
+.board__item-2:hover {
+   transform: translate(0px, -30px) scale(1.2);
+   /* Или: transform: translateY(-30px) scale(1.2); */
+}
+
+.board__item-3:hover {
+   transform: translate(-186px, -30px) scale(1.2);
+}
+
+.board_rotate {
+   height: 300px;
+   gap: 0;
+   position: relative;
+}
+
+.board__item_rotate-1,
+.board__item_rotate-2,
+.board__item_rotate-3 {
+   /* Если width: 250px, то получится снежинка */
+   /* width: 250px; */
+   width: 150px;
+   height: 86px;
+   position: absolute;
+   border: 1px solid blue;
+}
+
+/* Конечная позиция поворота */
+.board__item_rotate-1 {
+   transform: rotate(60deg);
+}
+
+/* Конечная позиция поворота */
+.board__item_rotate-2 {
+   /* Этот блок не поворачиваем */
+}
+
+/* Конечная позиция поворота */
+.board__item_rotate-3 {
+   transform: rotate(-60deg);
+}
+
+/* Плавное изменение border некрасиво. При такой попытке она меняется скачками по пикселям. Но, если толщина border большая, то получается вполне плавная анимация */
+
+/* Светло-зелёный "наполняет" */
+.board_rotate:hover .board__item {
+   /* Конечный цвет при наведении */
+   background-color: lightgreen;
+   border: 0px solid lightgreen;
+   /* transition: background-color 1s linear; */
+   transition: all 2s linear;
+}
+
+/* Светло-зелёный "тает" */
+.board_rotate .board__item {
+   transition: all 2s linear;
+   /* transition: background-color 2s linear; */
+}

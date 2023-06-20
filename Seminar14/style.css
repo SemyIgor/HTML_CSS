@@ -91,8 +91,18 @@ a {
    margin-right: calc((687px - 310px) / 10);
 } */
 
-.header__link:first-child {
+.header__link:hover {
+   color: orange;
+}
+
+.header__link:active {
    color: #F25822;
+}
+
+/* Вертикальная линия перед nav */
+.header__link:first-child {
+   border-left: 2px solid orange;
+   padding-left: 32px;
 }
 
 .top__content {

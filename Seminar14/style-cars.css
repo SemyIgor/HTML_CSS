@@ -1,0 +1,55 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.drive {
+   background-color: #eee;
+   padding-bottom: 50px;
+}
+
+.car {
+   width: 50px;
+   height: 20px;
+   margin-top: 5px;
+   border: 3px solid #f00;
+   background-color: #0f0;
+}
+
+/* Конечная позиция */
+.drive:hover .car {
+   margin-left: 500px;
+}
+
+/* Правила движения вперёд */
+.drive:hover .car3 {
+   margin-left: 500px;
+   transition: margin-left 1s ease;
+}
+
+.drive:hover .car1 {
+   margin-left: 500px;
+   /* transition: margin-left 1s ease-out; */
+   transition-duration: 5s;
+}
+
+/* Правила для движения вперёд-назад */
+.car1 {
+   transition: margin-left 3s ease;
+}
+
+.car2 {
+   transition: margin-left 3s ease-in;
+}
+
+.car3 {
+   transition: margin-left 3s ease-out;
+}
+
+.car4 {
+   transition: margin-left 3s ease-in-out;
+}
+
+.car5 {
+   transition: margin-left 3s linear;
+}
