@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form drill</title>
+   <link rel="stylesheet" href="style-check.css">
+   <script src="https://kit.fontawesome.com/876df11ad2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <form action="#" method="post">
+      <legend>Имя:</legend>
+      <p><input type="text" name="user__name" placeholder="Имя" id="" autofocus required></p>
+      <legend>Электронная почта:</legend>
+      <p><input type="email" name="user__email" placeholder="name@domen.com" id="" required></p>
+      <legend>Пароль:</legend>
+      <p><input type="password" name="user__password" id="" placeholder="password" required></p>
+      <legend>Возраст:</legend>
+      <input type="number" name="user__age" id="" min="1" placeholder="age" required><br>
+      <legend>Дата рождения:</legend>
+      <input type="date" name="user__birthdate" id="" required><br>
+      <legend>Телефон:</legend>
+      <input type="tel" name="user__phone" id="" placeholder="digits only" required><br>
+      <legend>Диапазон</legend>
+      <input type="range" name="one-to-ten" id="" min="1" max="10" step="1" value="3" required>
+      <label for="volume">Volume</label><br>
+      <button type="submit" class="submit_btn">Отправить форму</button>
+      <br>
+      <br>
+
+      <input type="checkbox" name="tasks" id="tasks">
+      <label for="tasks">Задачи</label>
+   </form>
+
+</body>
+
+</html>

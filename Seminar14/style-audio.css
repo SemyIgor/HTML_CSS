@@ -1,0 +1,39 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.audio__block {
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   background-color: #eee;
+}
+
+.video__block {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   padding: 0;
+   margin: 0;
+}
+
+.video__block>h1 {
+   position: absolute;
+   top: 45%;
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   cursor: pointer;
+}
+
+.video__player {
+   top: 0;
+   left: 0;
+   display: flex;
+   height: 100vh;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
