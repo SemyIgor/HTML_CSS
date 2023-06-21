@@ -55,6 +55,11 @@ h2 {
    border: 1px solid blue;
 }
 
+.snow {
+   width: 250px;
+
+}
+
 /* Конечная позиция поворота */
 .board__item_rotate-1 {
    transform: rotate(60deg);
