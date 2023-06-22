@@ -808,6 +808,10 @@ summary::before {
       margin-right: 0;
    }
 
+   .header__menu {
+      top: 58px;
+   }
+
    .header__burger {
       margin-bottom: 0;
    }
