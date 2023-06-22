@@ -165,7 +165,7 @@ h1 {
    position: absolute;
    top: 54px;
    opacity: 0;
-   right: -400px;
+   right: 0;
    /* right: -140px; */
    transition: all 1s;
 }
