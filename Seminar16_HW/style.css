@@ -125,6 +125,7 @@ h1 {
    align-items: center;
    padding-top: 18px;
    padding-bottom: 19px;
+   position: relative;
 }
 
 .header__logo img {
@@ -143,8 +144,66 @@ h1 {
    cursor: pointer;
 }
 
-.header__shop>img {
+.header__shop_item:not(:last-child) {
    margin-right: 33px;
+}
+
+.header__burger_block {
+   position: relative;
+}
+
+.header__burger_block:hover .header__menu {
+   opacity: 1;
+   right: -140px;
+}
+
+.header__menu {
+   width: 232px;
+   height: 634px;
+   padding-left: 33px;
+   background-color: #fff;
+   position: absolute;
+   top: 54px;
+   opacity: 0;
+   right: -400px;
+   /* right: -140px; */
+   transition: all 1s;
+}
+
+.header__menu_title {
+   color: #000;
+   font-size: 14px;
+   font-weight: 700;
+   margin-bottom: 24px;
+}
+
+summary {
+   display: block;
+   color: #F16D7F;
+   font-size: 14px;
+   margin-bottom: 12px;
+   margin-top: 24px;
+}
+
+summary::before {
+   content: '';
+}
+
+.header__menu_item {
+   list-style: none;
+   margin-left: 21px;
+   color: #6F6E6E;
+   font-size: 14px;
+   margin-bottom: 11px;
+}
+
+.header__menu_item a {
+   color: #6F6E6E;
+   font-size: 14px;
+}
+
+.header__burger {
+   margin-bottom: -17px;
 }
 
 .cart__block {
