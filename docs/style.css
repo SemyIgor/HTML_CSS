@@ -127,6 +127,10 @@ h1 {
    padding-bottom: 19px;
 }
 
+.header__logo img {
+   cursor: pointer;
+}
+
 .header__logo img:first-child {
    margin-right: 41px;
 }
@@ -135,7 +139,7 @@ h1 {
    display: flex;
 }
 
-.header__shop>img:first-child {
+.header__shop_item {
    cursor: pointer;
 }
 
