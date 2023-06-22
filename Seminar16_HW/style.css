@@ -796,8 +796,20 @@ summary::before {
       display: none;
    }
 
+   .header__shop_item:not(:last-child) {
+      margin-right: 0;
+   }
+
    .header__shop>img {
       margin-right: 0px;
+   }
+
+   .header__burger_block {
+      margin-right: 0;
+   }
+
+   .header__burger {
+      margin-bottom: 0;
    }
 
    .face__content {
