@@ -162,6 +162,7 @@ h1 {
    width: 232px;
    height: 634px;
    padding-left: 33px;
+   padding-top: 32px;
    background-color: #fff;
    position: absolute;
    top: -999px;
@@ -800,7 +801,7 @@ summary::before {
 
    .header__burger_block:hover .header__menu {
       opacity: 1;
-      right: -140px;
+      right: 0px;
       top: 58px;
    }
 
