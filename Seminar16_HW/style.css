@@ -398,6 +398,7 @@ summary::before {
 .goods__item_img {
    margin-bottom: 25px;
    position: relative;
+   /* overflow-y: wrap; */
 }
 
 .goods__item_veil {
