@@ -417,7 +417,7 @@ summary::before {
    transition-duration: .5s;
 }
 
-.goods__item:hover .goods__item_veil {
+.goods__item_img:hover .goods__item_veil {
    background-color: rgba(58, 56, 56, .86);
    border: rgba(255, 255, 255, 1) 1px solid;
    color: rgba(255, 255, 255, 1);
@@ -467,6 +467,16 @@ summary::before {
    font-size: 13px;
    line-height: 16px;
    color: #000000;
+   cursor: pointer;
+}
+
+.goods__item_header:hover {
+   font-weight: 900;
+   /* font-size: 13px;
+   line-height: 16px;
+   color: #000000; */
+   cursor: pointer;
+   transition-duration: 0.2s;
 }
 
 .goods__item_text {
