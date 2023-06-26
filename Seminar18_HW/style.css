@@ -100,6 +100,10 @@ h1 {
    margin: 0;
 }
 
+.outer-shell {
+   overflow: hidden;
+}
+
 .center {
    padding-left: calc(50% - 570px);
    padding-right: calc(50% - 570px);
@@ -112,10 +116,11 @@ h1 {
 
 .header {
    background-color: #222222;
-   max-width: 1600px;
+   /* max-width: 1600px; */
    margin: 0 auto;
    padding-left: 16px;
    padding-right: 16px;
+   position: relative;
 }
 
 .header__content {
@@ -125,7 +130,7 @@ h1 {
    align-items: center;
    padding-top: 18px;
    padding-bottom: 19px;
-   position: relative;
+   /* position: relative; */
 }
 
 .header__logo img {
@@ -138,6 +143,7 @@ h1 {
 
 .header__shop {
    display: flex;
+   position: relative;
 }
 
 .header__shop_item {
@@ -152,9 +158,9 @@ h1 {
    position: relative;
 }
 
-.header__burger_block:hover .header__menu {
+.header__burger_block:hover~.header__menu {
    opacity: 1;
-   right: -140px;
+   right: calc(0px - (50vw - 570px));
    top: 54px;
 }
 
@@ -165,10 +171,10 @@ h1 {
    padding-top: 32px;
    background-color: #fff;
    position: absolute;
-   top: -999px;
+   top: 54px;
    opacity: 0;
-   right: -140px;
-   transition: all .3s;
+   right: calc(0px - (50vw - 570px + 285px));
+   transition: all .5s;
 }
 
 .header__menu_title {
@@ -232,7 +238,7 @@ h1 {
 
 .face {
    background-color: #F1E4E6;
-   max-width: 1600px;
+   /* max-width: 1600px; */
    margin: 0 auto;
    padding-left: 16px;
    padding-right: 16px;
@@ -345,7 +351,7 @@ h1 {
 
 .goods {
    background-color: #fff;
-   max-width: 1600px;
+   /* max-width: 1600px; */
    margin: 0 auto;
    padding-top: 96px;
    padding-bottom: 95px;
@@ -398,7 +404,6 @@ h1 {
 .goods__item_img {
    margin-bottom: 25px;
    position: relative;
-   /* overflow-y: wrap; */
 }
 
 .goods__item_veil {
@@ -473,9 +478,6 @@ h1 {
 
 .goods__item_header:hover {
    font-weight: 900;
-   /* font-size: 13px;
-   line-height: 16px;
-   color: #000000; */
    cursor: pointer;
    transition-duration: 0.2s;
 }
@@ -525,7 +527,7 @@ h1 {
 
 .our-pas {
    background-color: #222224;
-   max-width: 1600px;
+   /* max-width: 1600px; */
    margin: 0 auto;
    padding-top: 103px;
    padding-bottom: 104px;
@@ -576,7 +578,7 @@ h1 {
 
 .subscribe {
    background: center / cover no-repeat url("./img/subscribe_bground.jpg");
-   max-width: 1600px;
+   /* max-width: 1600px; */
    margin: 0 auto;
    padding-top: 97px;
    padding-bottom: 126px;
@@ -676,7 +678,7 @@ h1 {
 }
 
 .footer {
-   max-width: 1600px;
+   /* max-width: 1600px; */
    margin: 0 auto;
    padding-top: 24px;
    padding-bottom: 23px;
@@ -731,6 +733,20 @@ h1 {
    .hero__content {
       /* Ограничение gap при большом экране и если gap выражен через vw*/
       gap: 30px;
+   }
+}
+
+@media (max-width: 1140px) {
+   .header__burger_block:hover~.header__menu {
+      opacity: 1;
+      right: 0px;
+      top: 56px;
+   }
+
+   .header__menu {
+      opacity: 0;
+      right: -285px;
+      transition: all .5s;
    }
 }
 
@@ -811,17 +827,9 @@ h1 {
       margin-right: 0;
    }
 
-   .header__burger_block:hover .header__menu {
-      opacity: 1;
-      right: 0px;
-      top: 58px;
-   }
-
-   .header__menu {
-      top: -999px;
-      opacity: 0;
+   .header__burger_block:hover~.header__menu {
       right: 0;
-      transition: all 1s;
+      top: 60px;
    }
 
    .header__burger {
