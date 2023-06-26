@@ -168,7 +168,7 @@ h1 {
    top: -999px;
    opacity: 0;
    right: -140px;
-   transition: all 1s;
+   transition: all .3s;
 }
 
 .header__menu_title {
@@ -178,7 +178,7 @@ h1 {
    margin-bottom: 24px;
 }
 
-summary {
+.summary {
    display: block;
    color: #F16D7F;
    font-size: 14px;
@@ -186,7 +186,7 @@ summary {
    margin-top: 24px;
 }
 
-summary::before {
+.summary::before {
    content: '';
 }
 
@@ -398,6 +398,7 @@ summary::before {
 .goods__item_img {
    margin-bottom: 25px;
    position: relative;
+   /* overflow-y: wrap; */
 }
 
 .goods__item_veil {
@@ -667,6 +668,7 @@ summary::before {
    border-top-right-radius: 24px;
    border-bottom-right-radius: 24px;
    margin-left: -2px;
+   cursor: pointer;
 }
 
 .subscribe__form_btn:focus {
@@ -964,6 +966,7 @@ summary::before {
 
    .subscribe__form_email {
       padding-left: 10px;
+      padding-right: 8px;
       width: 120px;
       width: calc(120px + (152 - 120) * ((100vw - 250px) / (320 - 220)));
    }
