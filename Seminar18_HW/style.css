@@ -150,17 +150,34 @@ h1 {
    cursor: pointer;
 }
 
-.header__shop_item:not(:last-child) {
+.header__shop_item {
    margin-right: 33px;
 }
 
-.header__burger_block {
-   position: relative;
+/* .header__shop_item:not(:last-child) {
+   margin-right: 33px;
+} */
+
+#header__menu_switch {
+   position: absolute;
+   left: 999999px;
+   visibility: hidden;
 }
 
+/* .header__burger_block {
+   position: relative;
+} */
+
+/* 
 .header__burger_block:hover~.header__menu {
    opacity: 1;
    right: calc(0px - (50vw - 570px));
+   top: 54px;
+} */
+
+#header__menu_switch:checked~.header__menu {
+   opacity: 1;
+   right: calc(0px - (50vw - 570px - 20px));
    top: 54px;
 }
 
@@ -170,6 +187,7 @@ h1 {
    padding-left: 33px;
    padding-top: 32px;
    background-color: #fff;
+   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
    position: absolute;
    top: 54px;
    opacity: 0;
@@ -719,7 +737,7 @@ h1 {
    background-color: #F26376;
 }
 
-/* Если сказать в svg без квадрата фона, то исключить */
+/* Если скачать в svg без квадрата фона, то исключить */
 .footer__icon_block:hover path:first-child {
    fill: #F26376;
 }
@@ -737,7 +755,7 @@ h1 {
 }
 
 @media (max-width: 1140px) {
-   .header__burger_block:hover~.header__menu {
+   #header__menu_switch:checked~.header__menu {
       opacity: 1;
       right: 0px;
       top: 56px;
@@ -827,7 +845,7 @@ h1 {
       margin-right: 0;
    }
 
-   .header__burger_block:hover~.header__menu {
+   #header__menu_switch:checked~.header__menu {
       right: 0;
       top: 60px;
    }
